@@ -1,0 +1,142 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(#c4a372, rgba(255, 255, 255, 0));
+}
+
+.navigation .logo {
+    cursor: pointer;
+}
+
+/* .navigation .logo img{
+    width: 200px;
+    object-fit: cover;
+    /* height: 50px; 
+} */
+
+#user-profile {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* #user-profile span {
+    font-family: Vivaldi;
+    font-size: 14pt;
+} */
+
+#user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin: auto;
+}
+
+#head-btn {
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fa.fa-fa-sign-out {
+    font-size: 5pt;
+    margin: auto;
+}
+
+nav {
+    flex: 1;
+    margin-left: 60px;
+}
+
+nav ul,
+.navigation ul.account {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li,
+.navigation ul.account li {
+    display: flex;
+    margin-left: 25px;
+}
+
+ul.account li a {
+    display: flex;
+    align-items: center;
+}
+
+ul.account li a img {
+    margin-right: 8px;
+}
+
+nav ul.account {
+    margin-left: 50%;
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11pt;
+    font-weight: 500;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #8d5e16;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: #8d5e16;
+    transition: .5s;
+}
+
+.navigation .fa {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 15px;
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #555;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+}

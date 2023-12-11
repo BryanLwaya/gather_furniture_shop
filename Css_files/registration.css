@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1,h2,h3,h4,h5,h6,a,label,input,select,textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: radial-gradient(rgb(255,255,255,0),#ffe3e4,#ce9c52);
+}
+
+a {
+    font-weight: bold;
+    color: #ce9c52;
+    text-decoration: none;
+}
+
+hr {
+    border: 0 solid transparent;
+    background-color: #ce9c52;
+    height: 2.5px;
+}
+
+input, select {
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+label {
+    font-weight: 700;
+}
+
+.outline {
+    width: 45%; 
+    margin: 7vh auto;
+    padding: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(rgb(255,255,255,0),#ffd6d60a,#ce9c5205);
+}
+
+.outline #back-img{
+    width: 19em;
+    height: 50%;
+    height: fit-content;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.title {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* .title img{
+    width: 4em;  
+    object-fit: cover;  
+} */
+
+.title h1{
+    color: #ce9c52;
+    font-size: 23px;
+    margin-left: 2px;
+}
+
+.outline .form_layout {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .names{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 15px 0px 0px 0px;
+}
+
+form .names p.fname{
+    margin-right: 10px;
+}
+
+form .names input{
+    width: 18em;
+}
+
+form .user-info input{
+    width: 100%;
+}
+
+form .user-info p{
+    margin: 15px 0px;
+}
+
+form #button {
+    width: 70%;
+    height: 35px;
+    margin: 0px 0px 15px 0px;
+    align-self: center;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    border: 0 solid transparent;
+    background-color: #ce9c52;
+    letter-spacing: 0.015em;
+    padding: 2px;
+}
+
+form #button:link {
+    color: white;
+}
+
+form #button:visited {
+    color: white;
+}
+
+form #button:hover {
+    /* a:hover must come after a:link and a:visited */
+    background-color: #8d5e16;
+    transition: .5s;
+}
+
+form #button:active {
+    background-color: #ce9c52;
+}
+
+.outline .form_layout p.user-login{
+    margin-top: 10px;
+    align-self: center;
+    align-items: center;
+    display: inline;
+}
+
+.outline .form_layout p #login {
+    color: white;
+    width: 4em;
+    height: 6vh;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.015em;
+    border: 0px solid transparent;
+    background-color: #ce9c52;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.outline .form_layout p a#login:link {
+    color: white;
+}
+
+.outline .form_layout p a#login:visited {
+    color: white;
+}
+
+.outline .form_layout p a#login:hover {
+    /* a:hover must come after a:link and a:visited */
+    background-color: #8d5e16;
+    transition: .4s;
+}
+
+.outline .form_layout p a#login:active {
+    background-color: #ce9c52;
+}
+
+p.image input {
+    border: none;
+}
+
+p.image {
+    margin-bottom: 0;
+}
